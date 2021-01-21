@@ -1,0 +1,4 @@
+<launch>
+	<node name="publisher_node" pkg="ros_basics" type="int32_publisher" output="screen"/>
+	<node name="subscriber_node" pkg="ros_basics" type="int32_subscriber" output="screen"/>
+</launch>
