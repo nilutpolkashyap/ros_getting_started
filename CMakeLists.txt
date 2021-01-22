@@ -13,10 +13,11 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+ find_package(Boost REQUIRED COMPONENTS system)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -49,25 +50,28 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
+ add_message_files(
+   FILES
+   greet.msg
 #   Message1.msg
 #   Message2.msg
-# )
+ )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
+ add_service_files(
+   FILES
+   serve.srv
 #   Service1.srv
 #   Service2.srv
-# )
+ )
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
+ add_action_files(
+   FILES
+   Demo_action.action
 #   Action1.action
 #   Action2.action
-# )
+ )
 
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
@@ -108,7 +112,8 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES ros_basics
-#  CATKIN_DEPENDS actionlib actionlib_msgs roscpp rospy std_msgs
+  CATKIN_DEPENDS actionlib actionlib_msgs roscpp rospy std_msgs
+  message_runtime
 #  DEPENDS system_lib
 )
 
@@ -119,7 +124,7 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+ include
   ${catkin_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS}
 )
@@ -143,6 +148,46 @@ add_dependencies(string_subscriber ros_basics_generate_messages_cpp)
 target_link_libraries(string_publisher ${catkin_LIBRARIES})
 target_link_libraries(string_subscriber ${catkin_LIBRARIES})
 
+
+add_executable(float_publisher src/float_publisher.cpp)
+add_executable(float_subscriber src/float_subscriber.cpp)
+
+add_dependencies(float_publisher ros_basics_generate_messages_cpp)
+add_dependencies(float_subscriber ros_basics_generate_messages_cpp)
+
+target_link_libraries(float_publisher ${catkin_LIBRARIES})
+target_link_libraries(float_subscriber ${catkin_LIBRARIES})
+
+
+
+add_executable(msg_publisher src/msg_publisher.cpp)
+add_executable(msg_subscriber src/msg_subscriber.cpp)
+
+add_dependencies(msg_publisher ros_basics_generate_messages_cpp)
+add_dependencies(msg_subscriber ros_basics_generate_messages_cpp)
+
+target_link_libraries(msg_publisher ${catkin_LIBRARIES})
+target_link_libraries(msg_subscriber ${catkin_LIBRARIES})
+
+
+add_executable(srv_server src/srv_server.cpp)
+add_executable(srv_client src/srv_client.cpp)
+
+add_dependencies(srv_server ros_basics_generate_messages_cpp)
+add_dependencies(srv_client ros_basics_generate_messages_cpp)
+
+target_link_libraries(srv_server ${catkin_LIBRARIES})
+target_link_libraries(srv_client ${catkin_LIBRARIES})
+
+
+add_executable(demo_action_server src/demo_action_server.cpp)
+add_executable(demo_action_client src/demo_action_client.cpp)
+
+add_dependencies(demo_action_client ros_basics_generate_messages_cpp)
+add_dependencies(demo_action_server ros_basics_generate_messages_cpp)
+
+target_link_libraries(demo_action_server ${catkin_LIBRARIES})
+target_link_libraries(demo_action_client ${catkin_LIBRARIES})
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
