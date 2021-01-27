@@ -233,6 +233,10 @@ target_link_libraries(demo_action_client ${catkin_LIBRARIES})
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
+catkin_install_python(PROGRAMS scripts/string_publisher.py scripts/string_subscriber.py
+	DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
 # install(TARGETS ${PROJECT_NAME}_node
