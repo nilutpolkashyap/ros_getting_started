@@ -233,7 +233,7 @@ target_link_libraries(demo_action_client ${catkin_LIBRARIES})
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
-catkin_install_python(PROGRAMS scripts/string_publisher.py scripts/string_subscriber.py
+catkin_install_python(PROGRAMS scripts/string_publisher.py scripts/string_subscriber.py scripts/int32_publisher.py scripts/int32_subscriber.py
 	DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
