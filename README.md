@@ -3,10 +3,11 @@
 
 ## ROS Topics - Publisher & Subscriber 
 1. Integer Publisher & Subscriber 
-<div align="center">
-<img  alt="GUI" width="50%" src="https://raw.githubusercontent.com/nilutpolkashyap/ros_basics/main/images/integer_topic.png" />
-<br />
-</div>
+    - C++ Nodes - 
+    ``` rosrun ros_basics int32_publisher ``` <br>
+    ``` rosrun ros_basics int32_subscriber ```
+
+<div align="center"> <img  alt="GUI" width="50%" src="https://raw.githubusercontent.com/nilutpolkashyap/ros_basics/main/images/integer_topic.png" /> <br /> </div>
 
 2. Float Publisher & Subscriber 
 <div align="center">
