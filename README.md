@@ -3,7 +3,7 @@
 
 ## ROS Topics - Publisher & Subscriber 
 1. Integer Publisher & Subscriber 
-    - C++ Nodes - 
+    - C++ Nodes - <br>
     ``` rosrun ros_basics int32_publisher ``` <br>
     ``` rosrun ros_basics int32_subscriber ```
 
