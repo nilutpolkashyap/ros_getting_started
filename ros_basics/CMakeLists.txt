@@ -61,6 +61,7 @@ find_package(catkin REQUIRED COMPONENTS
  add_service_files(
    FILES
    serve.srv
+   calc.srv
 #   Service1.srv
 #   Service2.srv
  )
