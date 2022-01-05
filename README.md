@@ -1,5 +1,14 @@
 # ros_basics
-### A collection of codes for ROS Basics 
+
+# ROS Learning Resources
+
+- ROS Basics  tutorials - http://wiki.ros.org/ROS/Tutorials
+- package.xml file - http://wiki.ros.org/catkin/package.xml
+- CMakeLists.txt file - http://wiki.ros.org/catkin/CMakeLists.txt
+- ROS Bag files - http://wiki.ros.org/ROS/Tutorials/reading%20msgs%20from%20a%20bag%20file  
+- catkin commands - http://wiki.ros.org/catkin/commands
+
+# A collection of codes for ROS Basics 
 
 ## ROS Topics - Publisher & Subscriber 
 1. Integer Publisher & Subscriber 
