@@ -4,8 +4,8 @@ from std_msgs.msg import Int32
 import random
 
 def publisher():
-	pub = rospy.Publisher('integer',Int32, queue_size  =100)
 	rospy.init_node("int32_publisher", anonymous=True)
+	pub = rospy.Publisher('integer',Int32, queue_size  =100)
 	rate = rospy.Rate(10)
 
 	while not rospy.is_shutdown():

@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 	{
 		std_msgs::String msg;
 		msg.data = "Hello World";
-		ROS_INFO("I sent: %s", msg.data.c_str());
+		ROS_INFO("Publisher sent: %s", msg.data.c_str());
 		pub.publish(msg);
 		ros::spinOnce();
 		loop_rate.sleep();

@@ -1,4 +1,11 @@
+<?xml version="1.0" ?>
 <launch>
-	<node name="publisher_node" pkg="ros_basics" type="float_publisher" output="screen"/>
-	<node name="subscriber_node" pkg="ros_basics" type="float_subscriber" output="screen"/>
+
+	<!-- C++ Subscriber & Publisher nodes -->
+	<node name="float_publisher_node" pkg="ros_basics" type="float_publisher" output="screen"/>
+	<node name="float_subscriber_node" pkg="ros_basics" type="float_subscriber" output="screen"/>
+
+	<!-- Python Subscriber & Publisher nodes -->
+<!-- 		<node name="float_publisher_node" pkg="ros_basics" type="float_publisher.py" output="screen"/>
+	<node name="float_subscriber_node" pkg="ros_basics" type="float_subscriber.py" output="screen"/> -->
 </launch>

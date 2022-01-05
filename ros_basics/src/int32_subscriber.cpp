@@ -5,7 +5,7 @@
 
 void callback(const std_msgs::Int32::ConstPtr& msg)
 {
-	ROS_INFO("I received: %d", msg->data);
+	ROS_INFO("Subscriber received: %d", msg->data);
 }
 
 int main(int argc, char **argv)

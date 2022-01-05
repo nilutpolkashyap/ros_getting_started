@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 	{
 		std_msgs::Int32 msg;
 		msg.data = count;
-		ROS_INFO("I sent: %d",msg.data);
+		ROS_INFO("Publisher sent: %d",msg.data);
 		pub.publish(msg);
 
 		ros::spinOnce();

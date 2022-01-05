@@ -1,4 +1,11 @@
+<?xml version="1.0" ?>
 <launch>
-	<node name="publisher_node" pkg="ros_basics" type="int32_publisher" output="screen"/>
-	<node name="subscriber_node" pkg="ros_basics" type="int32_subscriber" output="screen"/>
+
+	<!-- C++ Subscriber & Publisher nodes -->
+	<node name="int32_publisher_node" pkg="ros_basics" type="int32_publisher" output="screen"/>
+	<node name="int32_subscriber_node" pkg="ros_basics" type="int32_subscriber" output="screen"/>
+
+	<!-- Python Subscriber & Publisher nodes -->
+<!-- 	<node name="int32_publisher_node" pkg="ros_basics" type="int32_publisher.py" output="screen"/>
+	<node name="int32_subscriber_node" pkg="ros_basics" type="int32_subscriber.py" output="screen"/> -->
 </launch>

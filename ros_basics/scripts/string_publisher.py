@@ -9,7 +9,7 @@ def publisher():
 
 	while not rospy.is_shutdown():
 		str = "hello from Publisher" 
-		rospy.loginfo(str)
+		rospy.loginfo("Publisher sent : %s", str)
 		pub.publish(str)
 		rate.sleep()
 
