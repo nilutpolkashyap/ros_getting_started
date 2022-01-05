@@ -11,6 +11,9 @@
     ``` rosrun ros_basics int32_publisher.py ``` <br>
     ``` rosrun ros_basics int32_subscriber.py ```
 
+    - Launch Files (C++ Nodes default) - <br>
+    ``` roslaunch ros_basics int32_launch.launch```
+
 <div align="center"> <img  alt="GUI" width="50%" src="https://raw.githubusercontent.com/nilutpolkashyap/ros_basics/main/images/integer_topic.png" /> <br /> </div>
 
 2. Float Publisher & Subscriber 
@@ -21,6 +24,9 @@
     - Python Nodes - <br>
     ``` rosrun ros_basics float_publisher.py ``` <br>
     ``` rosrun ros_basics float_subscriber.py ```
+
+    - Launch Files (C++ Nodes default) - <br>
+    ``` roslaunch ros_basics float_launch.launch```
 
 <div align="center">
 <img  alt="GUI" width="50%" src="https://raw.githubusercontent.com/nilutpolkashyap/ros_basics/main/images/float_topic.png" />
@@ -35,6 +41,9 @@
     - Python Nodes - <br>
     ``` rosrun ros_basics string_publisher.py ``` <br>
     ``` rosrun ros_basics string_subscriber.py ```
+
+    - Launch Files (C++ Nodes default) - <br>
+    ``` roslaunch ros_basics string_launch.launch```
 
 <div align="center">
 <img  alt="GUI" width="50%" src="https://raw.githubusercontent.com/nilutpolkashyap/ros_basics/main/images/string_topic.png" />
