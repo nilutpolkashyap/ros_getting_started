@@ -5,8 +5,8 @@
 
 void callback(const ros_basics::greet::ConstPtr& msg)
 {
-	ROS_INFO("Received: %s", msg->greeting.c_str());
-	ROS_INFO("Number: %d", msg->number);
+	ROS_INFO("Received Message: %s", msg->greeting.c_str());
+	ROS_INFO("Received Number: %d", msg->number);
 }
 
 int main(int argc, char **argv)
