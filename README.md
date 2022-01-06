@@ -23,7 +23,7 @@
     - Launch Files (C++ Nodes default) - <br>
     ``` roslaunch ros_basics int32_launch.launch```
 
-<div align="center"> <img  alt="GUI" width="50%" src="https://raw.githubusercontent.com/nilutpolkashyap/ros_basics/main/images/integer_topic.png" /> <br /> </div>
+<div align="center"> <img  alt="integer_topic" width="50%" src="https://raw.githubusercontent.com/nilutpolkashyap/ros_basics/main/images/integer_topic.png" /> <br /> </div>
 
 2. **Float** Publisher & Subscriber 
     - C++ Nodes - <br>
@@ -38,7 +38,7 @@
     ``` roslaunch ros_basics float_launch.launch```
 
 <div align="center">
-<img  alt="GUI" width="50%" src="https://raw.githubusercontent.com/nilutpolkashyap/ros_basics/main/images/float_topic.png" />
+<img  alt="float_topic" width="50%" src="https://raw.githubusercontent.com/nilutpolkashyap/ros_basics/main/images/float_topic.png" />
 <br />
 </div>
 
@@ -55,7 +55,7 @@
     ``` roslaunch ros_basics string_launch.launch```
 
 <div align="center">
-<img  alt="GUI" width="50%" src="https://raw.githubusercontent.com/nilutpolkashyap/ros_basics/main/images/string_topic.png" />
+<img  alt="string_topic" width="50%" src="https://raw.githubusercontent.com/nilutpolkashyap/ros_basics/main/images/string_topic.png" />
 <br />
 </div>
 
@@ -79,7 +79,7 @@
     ``` roslaunch ros_basics custom_msg_launch.launch```
 
 <div align="center">
-<img  alt="GUI" width="50%" src="https://github.com/nilutpolkashyap/ros_basics/raw/main/images/msg_launch.png" />
+<img  alt="GUI" width="50%" src="https://github.com/nilutpolkashyap/ros_basics/raw/main/images/custom_msg.png" />
 <br />
 </div>
 
