@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- C++ Publisher & Subscriber Nodes -->
+	<!-- <node name="custom_msg_publisher" pkg="ros_basics" type="msg_publisher" output="screen"/>
+	<node name="custom_msg_subscriber" pkg="ros_basics" type="msg_subscriber" output="screen"/> -->
+
+	<!-- Python Publisher & Subscriber Nodes -->
+	<node name="custom_msg_publisher" pkg="ros_basics" type="msg_publisher.py" output="screen"/>
+	<node name="custom_msg_subscriber" pkg="ros_basics" type="msg_subscriber.py" output="screen"/>
+
+</launch>

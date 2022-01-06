@@ -12,7 +12,7 @@ def publisher():
 
 	while not rospy.is_shutdown():
 		msg = greet()
-		strg = "Hi there %s" % var
+		strg = "Hello ROS user" 
 		msg.greeting = strg
 		rospy.loginfo("Greetings sent : %s", strg)
 		rospy.loginfo("Number sent : %d", var)

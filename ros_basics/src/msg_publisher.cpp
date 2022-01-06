@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 {
 	ros::init(argc, argv, "msg_publisher");
 	ros::NodeHandle nh;
-	ros::Publisher pub = nh.advertise<ros_basics::greet>("/greet",10);
+	ros::Publisher pub = nh.advertise<ros_basics::greet>("/greeting",10);
 	ros::Rate loop_rate(10);
 
 	int num = 0;

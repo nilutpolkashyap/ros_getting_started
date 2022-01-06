@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 {
 	ros::init(argc, argv, "msg_subscriber");
 	ros::NodeHandle nh;
-	ros::Subscriber sub = nh.subscribe("/greet",10,callback);
+	ros::Subscriber sub = nh.subscribe("/greeting",10,callback);
 
 	ros::spin();
 	return 0;
